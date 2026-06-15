@@ -1,0 +1,135 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
+<style>
+  .wrap { padding: 2rem 0; font-family: var(--font-sans); }
+  .section-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-tertiary); margin-bottom: 1.25rem; }
+  .logo-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 1.5rem; }
+  .logo-cell { border: 0.5px solid var(--color-border-tertiary); border-radius: 14px; padding: 2rem 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .cell-label { font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 1px; }
+  .cell-label-dark { font-size: 11px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1px; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 2rem 0; }
+  .rationale { background: var(--color-background-secondary); border-radius: 8px; padding: 0.75rem 1rem; font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; border-left: 2px solid #00B67A; }
+</style>
+
+<div class="wrap">
+
+  <div class="section-label">Principal — fondo navy</div>
+  <div class="logo-row">
+    <div class="logo-cell" style="background:#0F2A52; border-color:#1B3A6B;">
+      <!--
+        M: cap height = 8, baseline = 52, altura = 44px
+        OG font-size sube a 56px para que el cap height visual iguale la M
+        baseline ajustada a 54 para mantener alineación base
+        M se recorre a x=103 para compensar el OG más ancho
+      -->
+      <svg width="460" height="80" viewBox="0 -12 460 80" role="img">
+        <title>OGMpay logo v5</title>
+
+        <!-- OG Outfit 800 — font-size 56 para igualar altura visual con la M -->
+        <text x="2" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="800" fill="white" letter-spacing="-2">OG</text>
+
+        <!-- M: pata izq empieza en x=106 pegada al OG -->
+        <line x1="106" y1="54" x2="106" y2="8" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <!-- Primera diagonal: (106,8) → vértice (130,46) -->
+        <line x1="106" y1="8" x2="130" y2="46" stroke="white" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- PALOMITA verde en vértice (130,46) -->
+        <!-- Trazo corto izq: (117,29) → (130,46) -->
+        <line x1="117" y1="29" x2="130" y2="46" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <!-- Trazo ascendente: (130,46) → (154,-8) — colita sube bien por encima -->
+        <line x1="130" y1="46" x2="154" y2="-8" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+
+        <!-- Pata derecha de la M: (154,8) → (154,54) -->
+        <line x1="154" y1="8" x2="154" y2="54" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+
+        <!-- Separador | -->
+        <line x1="173" y1="14" x2="173" y2="52" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- Pay Outfit 300 verde — mismo 56px -->
+        <text x="184" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="300" fill="#00B67A" letter-spacing="-1.5">Pay</text>
+
+      </svg>
+      <span class="cell-label-dark">Fondo navy — versión principal</span>
+    </div>
+  </div>
+
+  <div class="section-label">Sobre blanco</div>
+  <div class="logo-row">
+    <div class="logo-cell" style="background:white;">
+      <svg width="460" height="80" viewBox="0 -12 460 80" role="img">
+        <title>OGMpay blanco v5</title>
+        <text x="2" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="800" fill="#0F2A52" letter-spacing="-2">OG</text>
+        <line x1="106" y1="54" x2="106" y2="8" stroke="#0F2A52" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="106" y1="8" x2="130" y2="46" stroke="#0F2A52" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="117" y1="29" x2="130" y2="46" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="130" y1="46" x2="154" y2="-8" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="154" y1="8" x2="154" y2="54" stroke="#0F2A52" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="173" y1="14" x2="173" y2="52" stroke="rgba(15,42,82,0.25)" stroke-width="2" stroke-linecap="round"/>
+        <text x="184" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="300" fill="#00B67A" letter-spacing="-1.5">Pay</text>
+      </svg>
+      <span class="cell-label">Sobre blanco</span>
+    </div>
+
+    <div class="logo-cell" style="background:#00B67A; border-color:#009962;">
+      <svg width="460" height="80" viewBox="0 -12 460 80" role="img">
+        <title>OGMpay verde v5</title>
+        <text x="2" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="800" fill="white" letter-spacing="-2">OG</text>
+        <line x1="106" y1="54" x2="106" y2="8" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="106" y1="8" x2="130" y2="46" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="117" y1="29" x2="130" y2="46" stroke="#0F2A52" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="130" y1="46" x2="154" y2="-8" stroke="#0F2A52" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="154" y1="8" x2="154" y2="54" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="173" y1="14" x2="173" y2="52" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/>
+        <text x="184" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="300" fill="#0F2A52" letter-spacing="-1.5">Pay</text>
+      </svg>
+      <span class="cell-label" style="color:rgba(255,255,255,0.6);">Sobre verde</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-label">Tamaños sobre navy</div>
+  <div class="logo-cell" style="background:#0F2A52; border-color:#1B3A6B; align-items:flex-start; width:100%;">
+    <div style="display:flex; gap:20px; flex-direction:column;">
+
+      <svg width="390" height="66" viewBox="0 -12 460 80" role="img"><title>Grande</title>
+        <text x="2" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="800" fill="white" letter-spacing="-2">OG</text>
+        <line x1="106" y1="54" x2="106" y2="8" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="106" y1="8" x2="130" y2="46" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="117" y1="29" x2="130" y2="46" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="130" y1="46" x2="154" y2="-8" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="154" y1="8" x2="154" y2="54" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="173" y1="14" x2="173" y2="52" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"/>
+        <text x="184" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="300" fill="#00B67A" letter-spacing="-1.5">Pay</text>
+      </svg>
+
+      <svg width="240" height="42" viewBox="0 -12 460 80" role="img"><title>Mediano</title>
+        <text x="2" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="800" fill="white" letter-spacing="-2">OG</text>
+        <line x1="106" y1="54" x2="106" y2="8" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="106" y1="8" x2="130" y2="46" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="117" y1="29" x2="130" y2="46" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="130" y1="46" x2="154" y2="-8" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="154" y1="8" x2="154" y2="54" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="173" y1="14" x2="173" y2="52" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"/>
+        <text x="184" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="300" fill="#00B67A" letter-spacing="-1.5">Pay</text>
+      </svg>
+
+      <svg width="160" height="28" viewBox="0 -12 460 80" role="img"><title>Pequeño</title>
+        <text x="2" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="800" fill="white" letter-spacing="-2">OG</text>
+        <line x1="106" y1="54" x2="106" y2="8" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="106" y1="8" x2="130" y2="46" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="117" y1="29" x2="130" y2="46" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="130" y1="46" x2="154" y2="-8" stroke="#00B67A" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="154" y1="8" x2="154" y2="54" stroke="white" stroke-width="9.5" stroke-linecap="round"/>
+        <line x1="173" y1="14" x2="173" y2="52" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"/>
+        <text x="184" y="54" font-family="'Outfit',sans-serif" font-size="56" font-weight="300" fill="#00B67A" letter-spacing="-1.5">Pay</text>
+      </svg>
+
+    </div>
+  </div>
+
+  <div class="rationale">
+    OG subió de 48 a 56px para igualar ópticamente el cap height de la M dibujada a mano. La M y Pay también ajustados para mantener la misma baseline. Todo en el mismo tamaño visual ahora.
+  </div>
+
+</div>
